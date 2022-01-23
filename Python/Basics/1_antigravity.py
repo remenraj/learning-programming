@@ -1,0 +1,2 @@
+# XKCD comic
+import antigravity
