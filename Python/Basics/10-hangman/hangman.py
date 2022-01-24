@@ -1,3 +1,4 @@
+# hangman game
 import random
 
 from hangman_art import stages, logo
