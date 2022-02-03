@@ -1,7 +1,8 @@
-'''A simple "Choose Your Own Adventure" game. '''
+"""A simple "Choose Your Own Adventure" game. """
 
 # ascii for treasure chest
-print('''
+print(
+    '''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -22,30 +23,37 @@ ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
-''')
+'''
+)
 
 # welcom message for user
 print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.") 
+print("Your mission is to find the treasure.")
 
 
-prompt = input("You\'re at a crossroad. Where do you want to go? Type \"left\" or \"right\" ").lower()
+prompt = input(
+    'You\'re at a crossroad. Where do you want to go? Type "left" or "right" '
+).lower()
 
 if prompt == "left":
-  prompt = input("You\'ve come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across. ").lower()
+    prompt = input(
+        'You\'ve come to a lake. There is an island in the middle of the lake. Type "wait" to wait for a boat. Type "swim" to swim across. '
+    ).lower()
 
-  if prompt == "wait":
-    prompt = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ").lower()
+    if prompt == "wait":
+        prompt = input(
+            "You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? "
+        ).lower()
 
-    if prompt == "red":
-      print("It's a room full of fire. Game Over.")
-    elif prompt == "blue":
-      print("You enter a room of beasts. Game Over.")
-    elif prompt == "yellow":
-      print("You found the treasure! You Win!")
+        if prompt == "red":
+            print("It's a room full of fire. Game Over.")
+        elif prompt == "blue":
+            print("You enter a room of beasts. Game Over.")
+        elif prompt == "yellow":
+            print("You found the treasure! You Win!")
+        else:
+            print("Game Over.")
     else:
-      print("Game Over.")
-  else:
-    print("You get attacked by an angry trout. Game Over.")
+        print("You get attacked by an angry trout. Game Over.")
 else:
-  print("You fell into a hole. Game Over.")
+    print("You fell into a hole. Game Over.")
