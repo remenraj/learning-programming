@@ -49,4 +49,5 @@ def drawshapes():
     my_screen.exitonclick()
 
 
-drawshapes()
+if __name__ == "__main__":
+    drawshapes()
