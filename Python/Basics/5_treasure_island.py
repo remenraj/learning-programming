@@ -26,7 +26,7 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 '''
 )
 
-# welcom message for user
+# welcome message for user
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
