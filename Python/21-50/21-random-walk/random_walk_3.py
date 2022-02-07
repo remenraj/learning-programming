@@ -14,6 +14,9 @@ REPETITION = 10000
 # pen thickness
 PEN_THICKNESS = 5
 
+# speed of the turtle
+SPEED = 3
+
 # function to generate random color
 def randomcolor():
     """Generates random color"""
@@ -51,7 +54,7 @@ def randomwalk():
     turtly.width(PEN_THICKNESS)
 
     # change the turtle speed
-    turtly.speed("fastest")
+    turtly.speed(SPEED)
 
     # draw the random walk
     for _ in range(REPETITION):
