@@ -9,7 +9,7 @@ WIDTH = 800
 HEIGHT = 600
 
 # number of times turtle should move
-REPETITION = 10000
+REPETITION = 40
 
 # pen thickness
 PEN_THICKNESS = 5
