@@ -1,5 +1,3 @@
-# import random, pandas
-
 #############################
 ##### List Comprehension ####
 #############################
@@ -34,6 +32,7 @@
 ##### Dict comprehension ##
 ###########################
 
+# import random
 # names = ["james", "john", "jack", "jill", "jennifer", "jones"]
 # student_scores = {student: random.randint(1, 100) for student in names}
 # print(student_scores)
@@ -69,6 +68,8 @@
 ########################
 ######## pandas ########
 ########################
+
+# import random, pandas
 
 # student_dict = {
 #     "student": ["james", "john", "jack", "jill", "jennifer", "jones"],
