@@ -5,8 +5,11 @@ from tkinter import *
 import requests
 
 # file directories
-BACKGROUND_DIR = r"learning-programming\Python\21-50\43-kanye-quotes\background.png"
-KANYE_IMG_DIR = r"learning-programming\Python\21-50\43-kanye-quotes\kanye.png"
+try:
+    BACKGROUND_DIR = r"learning-programming\Python\21-50\43-kanye-quotes\background.png"
+    KANYE_IMG_DIR = r"learning-programming\Python\21-50\43-kanye-quotes\kanye.png"
+except FileNotFoundError:
+    print("File not found")
 
 
 def get_quote():
