@@ -2,11 +2,14 @@
 
 # Exploring BeautifulSoup
 from bs4 import BeautifulSoup
+
 # import lxml   # when using xml
 
 
 try:
-    WEBSITE_FILE_DIR = r"Workspace\100-days-of-code\day-45\website.html"
+    WEBSITE_FILE_DIR = (
+        r"learning-programming\Python\51-100\51-exploring-beautifulSoup\website.html"
+    )
 except FileNotFoundError:
     print("File not found")
 
