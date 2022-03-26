@@ -72,6 +72,7 @@ print(section_heading.get("id"))  # printing the heading id
 # select is used to find all the urls
 company_url = soup.select_one("p a")
 print(company_url)
+print(company_url.getText())
 
 # select can also be used to find id, class, href, text, etc.
 # id
