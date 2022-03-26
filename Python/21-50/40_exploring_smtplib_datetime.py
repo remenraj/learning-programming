@@ -12,6 +12,13 @@
 #         msg="Subject:Hello World!\n\nBody of the email",
 #     )
 
+# Gmail: smtp.gmail.com
+
+# Hotmail: smtp.live.com
+
+# Outlook: outlook.office365.com
+
+# Yahoo: smtp.mail.yahoo.com
 
 # import datetime as dt
 
