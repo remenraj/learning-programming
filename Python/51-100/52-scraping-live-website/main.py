@@ -5,6 +5,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+# Use robots.txt to determine what is allowed to be scraped. eg:https://news.ycombinator.com/robots.txt
 
 website_response = requests.get("https://news.ycombinator.com/")
 website_response.raise_for_status()
