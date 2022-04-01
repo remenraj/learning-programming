@@ -1,6 +1,5 @@
 # Automated amazon price tracker: Alerts user via email when the price is dropped below a certain threshold
 
-from numpy import product
 import requests
 from bs4 import BeautifulSoup
 import re, smtplib, os
@@ -40,7 +39,7 @@ print(price)
 PRESET_PRICE = 500.0
 
 if price < PRESET_PRICE:
-    
+
     EMAIL = os.environ.get("EMAIL")
     EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
@@ -49,7 +48,9 @@ if price < PRESET_PRICE:
         connection.login(user=EMAIL, password=EMAIL_PASSWORD)
         connection.sendmail(
             from_addr=EMAIL,
-            to_addrs=EMAIL, # sending email to the user itself
-            msg=f"Subject: Amazon Price Alert\n\nPrice: {price_tag}\nLink:{PRODUCT_URL}".encode("utf-8"),
+            to_addrs=EMAIL,  # sending email to the user itself
+            msg=f"Subject: Amazon Price Alert\n\nPrice: {price_tag}\nLink:{PRODUCT_URL}".encode(
+                "utf-8"
+            ),
         )
     print("Email sent")
