@@ -74,9 +74,10 @@ def csvfile():
     t_f = (9 / 5) * monday_temperature + 32
     print(t_f)
 
-    # create a data frame from scratch
+    # create a data dictionary from scratch
     data_dict = {"students": ["Amy", "James", "Angela"], "scores": [76, 56, 65]}
 
+    # convert data dictionary into data frame
     new_data = pandas.DataFrame(data=data_dict)
     print(new_data)
     new_data.to_csv(f"{NEW_CSV_FILE_DIR}\\score_data.csv")
