@@ -22,3 +22,7 @@ Code in a function's local scope cannot use variables in any another function's 
 (If there is a global statement for a variable at the top of a function, that variable in that function is a global variable.)
 If there's an assignment statement for a variable in a function, that is a local variable. The exception is if there's a global statement for that variable; then it's a global variable.
 
+
+A divide-by-zero error happens when Python divides a number by zero.
+Errors cause the program to crash. (This doesn't damage your computer at all. It's just that the computer doesn't know how to carry out this instruction, so it immediately stops the program by "crashing" rather than continue.)
+An error that happens inside a try block will cause code in the except block to execute. That code can handle the error or display a message to the user so that the program can keep going.
