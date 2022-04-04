@@ -1,5 +1,5 @@
 # challenge 2 from https://pythonchallenge.com
-# Solved using dictionary
+# Solved using dictionary 
 # Python3 code to demonstrate each occurrence frequency using collections.Counter()
 from collections import Counter
 import pprint
