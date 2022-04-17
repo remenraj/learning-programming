@@ -11,6 +11,14 @@
 # 8 5 2
 # 9 6 3
 
+# # algorithm
+# for i = 0 to n:
+#     temp = top_left[i]
+#     top_left[i] = bottom_left[i]
+#     bottom_left[i] = bottom_right[i]
+#     bottom_right[i] = top_right[i]
+#     top_right[i] = temp
+
 import numpy as np
 
 
@@ -25,7 +33,7 @@ def rotate_matrix(matrix: np.array) -> np.array:
         last = n - layer - 1
         
         for i in range(first, last):
-            # save top
+            # save top left element
             top = matrix[layer][i]
 
             # bottom left -> top left
