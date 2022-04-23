@@ -47,10 +47,10 @@ class CircularSinglyLinkedList:
         return "Created a circular singly linked list"
     
     def insert_into_CSLL(self, value, location):
-        
+        """Insert a node into a circular singly linked list"""
         # checking if there is no nodes in the linked list
         if self.head is None:
-            return "the head reference is None"
+            return "The head reference is None"
 
         else:
             new_node = Node(value=value)
@@ -67,7 +67,7 @@ class CircularSinglyLinkedList:
                 self.tail.next = new_node  # assigning the reference of the new_node to the last node
                 self.tail = new_node  # assigning the new_node as the tail
 
-            # inserting anywhere else
+            # inserting the new node anywhere else
             else:
                 # iterating over the linked list to find the location of the node to be inserted
                 # new_node will be inserted between temp_node and temp_node.next
