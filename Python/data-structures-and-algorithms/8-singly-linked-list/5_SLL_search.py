@@ -69,7 +69,7 @@ class SinglyLinkedList:
                 temp_node.next = new_node
 
     def search_SLL(self, node_value):
-
+        """Search for a node in a singly linked list"""
         # checking for head, if head has reference, then there is a node present, else there is no node connected
         if self.head is None:
             return "Single Linked List does not exist."

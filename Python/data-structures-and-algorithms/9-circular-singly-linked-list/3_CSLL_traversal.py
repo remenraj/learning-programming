@@ -121,5 +121,5 @@ print([node.value for node in circular_SLL])
 circular_SLL.insert_into_CSLL(value=3, location=2)
 print([node.value for node in circular_SLL])
 
-
+# traversing the circular singly linked list
 circular_SLL.traverse_CSLL()

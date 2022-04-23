@@ -175,6 +175,10 @@ print([node.value for node in singly_linked_list])
 singly_linked_list.delete_node(3)
 print([node.value for node in singly_linked_list])
 
+# deleting the second node
+# if we call delete_node with any negative value, it'll delete the second node
+singly_linked_list.delete_node(-5)
+print([node.value for node in singly_linked_list])
 
 # deleting entire singly linked list
 singly_linked_list.delete_entire_SLL()
