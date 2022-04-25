@@ -149,7 +149,7 @@ class CircularSinglyLinkedList:
                     index += 1        
             
 
-                # another simple way
+                # another way
                 # before_node = temp_node  # assigning the reference of the node before the node we want to delete
                 # to_delete_node = temp_node.next  # assigning the reference of the node we want to delete
                 # after_node = to_delete_node.next

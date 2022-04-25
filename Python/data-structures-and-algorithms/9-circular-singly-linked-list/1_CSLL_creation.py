@@ -16,6 +16,7 @@ class CircularSinglyLinkedList:
         self.head = None  # head
         self.tail = None  # tail
 
+
     def __iter__(self) -> None:
         """Iterate over the linked list to print the values"""
         node = self.head
@@ -29,14 +30,14 @@ class CircularSinglyLinkedList:
     def create_CSLL(self, node_value) -> str:
         """Create a circular singly linked list"""
         # creating a node
-        node = Node(value=node_value)
+        new_node = Node(value=node_value)
 
         # referencing the node to itself
-        node.next = node
+        new_node.next = new_node
         
         # assigning the head and tail
-        self.head = node
-        self.tail = node
+        self.head = new_node
+        self.tail = new_node
 
         return "Created a circular singly linked list"
         
