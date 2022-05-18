@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "9f9535c0-8b9e-4dda-9d06-db9beef2a1f4",
+		"name": "Cafe and Wifi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all cafes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				},
+				"description": "This route returns a json with the data from all cafes in the database."
+			},
+			"response": []
+		},
+		{
+			"name": "Get random cafe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/random",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				},
+				"description": "Returns a random cafe from the database."
+			},
+			"response": []
+		},
+		{
+			"name": "Search cafes by location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?loc=Barbican",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "loc",
+							"value": "Barbican"
+						}
+					]
+				},
+				"description": "The /search route will search the cafe database for a cafe that matches the location queried.  \nUse the loc parameter to pass a location name."
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new cafe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "fdafd",
+							"type": "text"
+						},
+						{
+							"key": "map_url",
+							"value": "dfasfasdf",
+							"type": "text"
+						},
+						{
+							"key": "img_url",
+							"value": "dfsda",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "fdsfsd",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "has_toilet",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "has_wifi",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "has_sockets",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "can_take_calls",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "coffee_price",
+							"value": "$3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "New cafe",
+							"disabled": true
+						},
+						{
+							"key": "map_url",
+							"value": "https://sadhfohewoiasdlfdssdf.com/sdfoajsifj",
+							"disabled": true
+						},
+						{
+							"key": "img_url",
+							"value": "https://jodsjaowo.com/hsohs",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "Peru",
+							"disabled": true
+						},
+						{
+							"key": "seats",
+							"value": "25",
+							"disabled": true
+						},
+						{
+							"key": "has_toilet",
+							"value": "True",
+							"disabled": true
+						},
+						{
+							"key": "has_wifi",
+							"value": "True",
+							"disabled": true
+						},
+						{
+							"key": "has_sockets",
+							"value": "True",
+							"disabled": true
+						},
+						{
+							"key": "can_take_calls",
+							"value": "True",
+							"disabled": true
+						},
+						{
+							"key": "coffee_price",
+							"value": "$1.4",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Adds a new cafe entry to the database.  \nRequires authentication with api-key parameter."
+			},
+			"response": []
+		},
+		{
+			"name": "Update coffee price",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/update-price/33?price=$3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update-price",
+						"33"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "$3"
+						}
+					]
+				},
+				"description": "Update the price of a black coffee at a particular cafe.  \nUsing the id and price parameters."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cafe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/report-closed/22?api_key=SecretAPIKey",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"report-closed",
+						"22"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "SecretAPIKey"
+						}
+					]
+				},
+				"description": "Deletes a cafe from the database.  \nYou will need to provide the id of the cafe to delete as a route.  \nYou will also need to provide a valid API for this operation to be allowed."
+			},
+			"response": []
+		}
+	]
+}
