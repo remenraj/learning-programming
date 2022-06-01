@@ -46,7 +46,7 @@ for article_tag in articles:
     article_link = article_tag.get("href")
     article_links.append(article_link)
 
-# getting all the upvote texts and converting the text into ingeger score
+# getting all the upvote texts and converting the text into integer score
 article_upvotes = [
     int(article_upvote.getText().split()[0])
     for article_upvote in yc_soup.find_all(name="span", class_="score")
