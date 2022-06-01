@@ -46,7 +46,7 @@ while is_game_on and len(correct_ans_list) < 50:
         title=f"{score}/50 States Correct", prompt="Enter the state name"
     ).title()
 
-    # exting the game early
+    # exiting the game early
     if user_answer == "Exit":
         # creating a dictionary of missed states
         missed_states = {}
