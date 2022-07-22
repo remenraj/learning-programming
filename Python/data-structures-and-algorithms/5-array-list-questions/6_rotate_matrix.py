@@ -58,6 +58,16 @@ def rotate_matrix(matrix: np.array) -> np.array:
 
     return matrix
 
+    # # another method
+    # n = len(matrix)
+    # temp = np.copy(matrix)
+    
+    # for i in range(n):
+    #     for j in range(n):
+    #         temp[i][j] = matrix[(n-1) - j][i]
+
+    # return temp
+
 
 def main() -> None:
     matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
